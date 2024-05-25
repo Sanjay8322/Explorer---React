@@ -1,0 +1,37 @@
+
+
+.logo{
+    width: 150px;
+}
+
+.navbar{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 15px;
+}
+
+.navbar ul{
+    display:inline;
+}   
+
+.navbar ul li{
+    display: inline-block;
+    list-style: none;
+    margin: 0 10px;
+}
+
+.navbar ul li:hover{
+    color: #f27238;
+}
+
+
+@media (max-width:900px){
+    .navbar ul{
+        display: none;
+    }
+
+    .navbar{
+        justify-content: center;
+    }
+}

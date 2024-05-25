@@ -1,0 +1,38 @@
+.footer{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    margin-top: 5%;
+    margin-bottom: 5%;
+}
+
+.iconDiv img{
+    width: 200px;
+}
+
+
+.linksDiv ul {
+    list-style: none;
+}
+
+.linksDiv ul li{
+    display: inline;
+    margin: 10px;
+}
+
+@media (max-width:600px){
+    .footer{
+        flex-direction: column;
+        margin-top: 10%;
+    }
+
+        
+    .linksDiv ul li{
+        display: block;
+        text-align: center;
+    }
+
+    .icons{
+        display: inline;
+    }
+}

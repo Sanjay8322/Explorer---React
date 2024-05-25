@@ -1,0 +1,81 @@
+.placeHeading h3{
+    text-decoration: underline;
+    color: #f27238;
+}
+
+.destinations{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.placeHeading{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top:5% ;
+    margin-bottom: 5%;
+}
+
+
+.def-child{
+    display: flex;
+    justify-content: space-between;
+    padding: 20px 10px;
+}
+
+.placeImages img{
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+
+.placeImages{
+    height: 100%;
+    width: 100%;
+    /* border: #f27238 solid 0.5px; */
+    margin: 5px;
+    border-radius: 10px;
+    margin-bottom: 10%;
+    box-shadow: 5px 5px 2px 0px rgba(0,0,0,0.09);
+    position: relative;
+}
+
+.tripTime{
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    opacity: 0;
+    background: rgba(219, 140, 21, 0.4);
+    padding-top: 70%;
+    transition: 0.5s;
+    border-radius: 10px;
+}
+
+
+.placeImages:hover .tripTime{
+    opacity: 1;
+    padding-top: 0;
+}
+
+@media (max-width:900px){
+    .destinations{
+        flex-direction: column;
+        flex-basis:80%;
+    }
+}
+
+
+@media (max-width:400px){
+    .placeHeading{
+        flex-direction: column;
+
+    }
+}
